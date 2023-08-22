@@ -1,0 +1,96 @@
+.addressContainer {
+  padding: 0 300px;
+  width: 100%;
+  margin-bottom: 169px;
+
+  .addressTitle {
+    margin-bottom: 76px;
+
+    span {
+      display: block;
+
+      &:nth-child(1) {
+        font-size: 40px;
+        line-height: 40px;
+        color: rgba(51, 51, 51, 0.3);
+        margin-bottom: 9px;
+        font-family: Arial-BoldMT, Arial;
+      }
+
+      &:nth-child(2) {
+        font-size: 26px;
+        line-height: 26px;
+        color: #333;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN
+      }
+    }
+  }
+
+  .addressMap {
+    height: 776px;
+    width: 100%;
+    box-shadow: 32px 0px 111px 0px rgba(160.724, 188, 164.681, 0.2);
+    position: relative;
+    z-index: 2;
+
+    // .addressMapBjBox {
+    //   position: relative;
+    //   width: 100%;
+    //   height: 100%;
+
+    .addressMapBj {
+      position: absolute;
+      width: 376px;
+      height: 346px;
+      right: -76px;
+      top: -76px;
+      background: #EDF7EF;
+      z-index: 0;
+    }
+
+    .addressMapContent {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      padding: 57px 58px 0px;
+
+      .address {
+        display: flex;
+        margin-bottom: 34px;
+        align-items: flex-end;
+
+        .addressImg {
+          // width: 24px;
+          // height: 24px;
+          // object-fit: cover;
+          margin-right: 10px;
+          align-items: flex-end;
+
+          img {
+            width: 20px;
+            // width: 100%;
+            // height: 100%;
+          }
+        }
+
+        span {
+          font-size: 20px;
+          color: #666;
+          line-height: 20px;
+        }
+      }
+
+      .addressGis {
+        width: 100%;
+        height: 620px;
+
+
+      }
+    }
+
+    // }
+
+  }
+}

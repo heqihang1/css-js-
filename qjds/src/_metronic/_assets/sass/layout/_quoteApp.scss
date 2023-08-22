@@ -1,0 +1,87 @@
+.item-droppable-props {
+    display: flex;
+
+    &:hover {
+        .add-buttona {
+            display: flex;
+        }
+    }
+
+    .add-buttona {
+        display: none;
+        position: relative;
+        right: 8px;
+        // margin-right: 20px;
+        width: 12px;
+        height: 12px;
+        padding: 0 6px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .add-buttona::after {
+        content: "";
+        width: 6px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        background-color: #fff;
+    }
+
+    .max-number {
+        width: 12px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .left-border {
+            display: block;
+            height: 100%;
+            width: 1px;
+            background-color: #3F4254;
+            left: 0;
+        }
+
+        .left-border-number {
+            position: absolute;
+            right: -6px;
+        }
+
+        // &::before{
+        //     display: block;
+        //     height: 100%;
+        //     width: 1px;
+        //     background-color: #3F4254;
+        //     left: 0;
+        // }
+    }
+
+}
+
+.quiteApp {
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.quiteApp::-webkit-scrollbar {
+    display: none;
+}
+
+.hiddenYM {
+    position: relative;
+}
+
+.hiddenYM_s {
+    position: absolute;
+    top: 33px;
+    left: 26px;
+    background: white;
+    padding: 2px;
+    ;
+}
+
+.hiddenYM_p {
+    padding: 2px 4px;
+}

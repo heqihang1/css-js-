@@ -1,0 +1,131 @@
+.blurbContainer {
+  width: 100%;
+
+  >h5 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 103px;
+
+    >span {
+      width: 100%;
+      color: #333;
+
+      &:nth-child(1) {
+        font-size: 39px;
+        font-family: Arial-BoldMT, Arial;
+        font-weight: normal;
+        color: #333333;
+        line-height: 39px;
+        margin-right: 15px;
+        text-align: right;
+      }
+
+      &:nth-child(2) {
+
+        font-size: 35px;
+        font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+        // font-weight: bold;
+        color: #333333;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .blurbContainerContent {
+    display: flex;
+    padding: 0 200px;
+    width: 100%;
+    margin-bottom: 190px;
+
+    .blurbImg {
+      width: 856px;
+      height: 554px;
+      position: relative;
+      margin-right: 66px;
+      z-index: 2;
+
+      .blurbBj {
+        position: absolute;
+        width: 840px;
+        height: 406px;
+        bottom: -506px;
+        left: 50%;
+        background-color: #f0faf4;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        // background-color: red;
+      }
+    }
+
+    .blurbRight {
+      width: calc(100% - 856px - 66px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      aside {
+        font-size: 46px;
+        font-family: HanYiXiXingKaiJian-Light;
+        font-weight: 300;
+        color: #333333;
+        line-height: 55px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+      }
+
+      h6 {
+        // padding-top: 225px;
+        font-size: 30px;
+        font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+        // font-weight: bold;
+        color: #333333;
+        line-height: 30px;
+        margin-bottom: 101px;
+      }
+
+      >div {
+        position: relative;
+        width: 747px;
+        // height: 372px;
+        padding: 76px 92px 56px 92px;
+        background: #FFFFFF;
+        opacity: 1;
+
+        // box-shadow: 32px 0px 111px 0px rgba(160.724, 188, 164.681, 1);
+        z-index: 3;
+        transform: translate(-150px, 0);
+        position: relative;
+        font-weight: 400;
+        color: #333333;
+        line-height: 40px;
+        font-size: 18px;
+        z-index: 2;
+        white-space: pre-wrap;
+        font-size: 18px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+        font-weight: 400;
+        // span {
+
+        // }
+        // .text {
+
+        // }
+
+        .shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          box-shadow: 32px 0px 111px 0px rgba(160.724, 188, 164.681, 0.2);
+          z-index: 1;
+        }
+
+
+      }
+    }
+  }
+}

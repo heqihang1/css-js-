@@ -1,0 +1,42 @@
+/* :root {
+  font-size: calc((1vw + 0.8em) / 3.2)
+} */
+@font-face {
+  font-family: Arial-Black;
+  src: url(./assets/fonts/NotoSansCJK-Black-7.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Bold;
+  src: url(./assets/fonts/NotoSansCJK-Bold-6.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansCN-DemiLight;
+  src: url(./assets/fonts/NotoSansCJK-DemiLight-4.otf);
+}
+
+@font-face {
+  font-family: NotoSansCJK-Light;
+  src: url(./assets/fonts/NotoSansCJK-Light-3.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Medium;
+  src: url(./assets/fonts/NotoSansCJK-Medium-5.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Regular;
+  src: url(./assets/fonts/NotoSansCJK-Regular-1.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansCN-Thin;
+  src: url(./assets/fonts/NotoSansCJK-Thin-2.otf);
+}
+
+@font-face {
+  font-family: HanYiXiXingKaiJian-Light;
+  src: url(./assets/fonts/HanYiXiXingKaiJian-1.ttf);
+}

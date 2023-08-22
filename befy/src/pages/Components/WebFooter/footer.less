@@ -1,0 +1,110 @@
+@size: 100%;
+
+.footer {
+  height: 669px;
+  width: @size;
+  position: relative;
+  bottom: 0;
+  z-index: 10;
+  background-color: #f8f8f8;
+
+  .shareBox {
+    height: 110px;
+  }
+
+  .minFooter {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    // padding-left: 440px;
+    padding-top: 153px;
+    justify-content: space-between;
+
+    article,
+    aside {
+      display: flex;
+
+    }
+
+    aside {
+      // margin-left: 260px;
+      padding-top: 10px;
+
+      .navList {
+        height: 14px;
+        font-size: 14px;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+        color: #656565;
+        line-height: 14px;
+        padding-right: 69px;
+        cursor: pointer;
+
+        &:nth-last-child(1) {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .footerLogo {
+      max-width: 87px;
+      object-fit: cover;
+      margin-right: 30px;
+
+      img {
+        width: @size;
+      }
+    }
+
+    .footerText {
+      padding-top: 10px;
+
+      .footerTextTitle {
+        height: 23px;
+        font-size: 24px;
+        font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+        // font-weight: bold;
+        color: #333333;
+        line-height: 23px;
+        margin-bottom: 27px;
+      }
+
+      .footerTextList {
+        margin-bottom: 27px;
+        height: 15px;
+        font-size: 14px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansSC;
+        font-weight: 400;
+        color: #656565;
+        line-height: 15px;
+        display: flex;
+
+        img {
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+
+  .filingNumber {
+    position: absolute;
+    bottom: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: @size;
+    cursor: pointer;
+
+    span {
+      font-size: 14px;
+      font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+      font-weight: 500;
+      color: #999999;
+      line-height: 14px;
+
+      &:nth-child(1) {
+        margin-right: 53px;
+      }
+    }
+  }
+}

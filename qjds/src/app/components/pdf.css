@@ -1,0 +1,92 @@
+.contract-pdf-component,
+.job-order-pdf-component,
+.invoice-pdf-component,
+.questionnaire-pdf-component,
+.quotation-pdf-component {
+  border: 0;
+  outline: none;
+}
+
+.quotation-pdf-component .card-header,
+.invoice-pdf-component .card-header,
+.questionnaire-pdf-component .card-header,
+.job-order-pdf-component .card-header,
+.contract-pdf-component .card-header {
+  border-bottom: 1px solid #000000;
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+}
+
+.company-about p {
+  margin: 0 !important;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #quotation-pdf-component,
+  #quotation-pdf-component *,
+  #invoice-pdf-component,
+  #invoice-pdf-component *,
+  #questionnaire-pdf-component,
+  #questionnaire-pdf-component *,
+  #job-order-pdf-component,
+  #job-order-pdf-component *,
+  #contract-pdf-component,
+  #contract-pdf-component * {
+    visibility: visible;
+  }
+
+  #job-order-pdf-component .visibility-hidden {
+    visibility: hidden;
+  }
+
+  #kt_content {
+    margin-top: -90px;
+  }
+
+  #kt_header,
+  #kt_header_mobile,
+  #kt_subheader,
+  .contract-right-side {
+    display: none;
+  }
+}
+
+#quotation-pdf-component,
+#invoice-pdf-component,
+#questionnaire-pdf-component,
+#job-order-pdf-component,
+#contract-pdf-component {
+  background: white;
+  padding: 5p;
+  border-radius: 10px;
+  padding: 0px 25px;
+}
+
+/* JOB ORDER CONTENT */
+.table-section-title,
+.job-order-content .table-section-title {
+  margin: 0px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.job-order-content table,
+.job-order-content table thead {
+  border: 1px solid #000;
+}
+.job-order-content table td {
+  padding: 5px 10px;
+}
+.job-order-content .notes-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  margin-bottom: 60px;
+}

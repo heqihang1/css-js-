@@ -1,0 +1,106 @@
+.textEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // flex-wrap: nowrap;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.newsListContainer {
+  .newsList {}
+
+  .newsListItem {
+    display: flex;
+    height: 300px;
+    padding-left: 58px;
+    padding-right: 20px;
+    background: #FFFFFF;
+    box-shadow: 32px 0px 111px 0px rgba(160.724, 188, 164.681, 0.2);
+    margin-bottom: 43px;
+
+    .newsListItemLeft {
+      padding-top: 127px;
+      margin-right: 40px;
+
+      span {
+        display: block;
+
+        &:nth-child(1) {
+          font-size: 30px;
+          line-height: 30px;
+          margin-bottom: 24px;
+          color: #333;
+          font-family: SourceHanSansCN-Bold;
+        }
+
+        &:nth-child(2) {
+          font-size: 20px;
+          line-height: 20px;
+          color: #999;
+          font-family: ArialMT;
+        }
+      }
+    }
+
+    .newsListItemCenter {
+      margin-top: 34px;
+      width: 289px;
+      height: 231px;
+      margin-right: 32px;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .newsListItemRight {
+      width: 783px;
+      padding-top: 66px;
+
+      div {
+        cursor: pointer;
+        width: 100%;
+
+        &:nth-child(1) {
+          width: 100%;
+          height: 32px;
+          font-size: 32px;
+          font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+          // font-weight: bold;
+          color: #333333;
+          line-height: 32px;
+          margin-bottom: 38px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        &:nth-child(2) {
+          width: 783px;
+          // height: 52px;
+          font-size: 16px;
+          font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+          font-weight: 400;
+          color: #656565;
+          line-height: 30px;
+          margin-bottom: 44px;
+          .textEllipsis()
+        }
+
+        &:nth-child(3) {
+          height: 16px;
+          font-size: 16px;
+          font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+          font-weight: 400;
+          color: #39B549;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

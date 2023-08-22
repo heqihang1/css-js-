@@ -1,0 +1,5 @@
+{
+  "ignore": [".git", "node_modules/", "build/", "dist/", "src/"],
+  "ext": "js,json,mjs,html",
+  "watch": ["./", "./public"]
+}
